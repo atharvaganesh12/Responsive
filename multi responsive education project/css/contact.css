@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 22.5px 0.16px;
+    border:0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+/*--NAVBAR--*/
+
+nav{
+    background:transparent;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top:0;
+    z-index: 11;
+}
+    /*--change navbar styles on scroll using javascript--*/
+.window-scroll{
+    background: var(--color-primary);
+    box-shadow: 0 12rem 2rem rgba(0,0,0,0.00001);
+}
+
+.nav__container{
+    height: 100%;
+    display: flex;
+    justify-content: space space-between;
+    align-items: center;
+}
+nav button{
+    display:none;
+
+}
+.nav__menu{
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}
+.nav__menu a{
+    font-size: 0.9rem;
+    transition: var(--transition);
+    
+}
+.nav__menu a:hover{
+    color: var(--color-bg2);
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--color-bg2);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color:rebeccapurple;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  p{
+    color: rebeccapurple;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
